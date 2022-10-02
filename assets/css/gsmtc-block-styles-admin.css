@@ -1,0 +1,97 @@
+.gsmtc-bold{
+    font-weight: bold;
+}
+.gsmtc-closed{
+    display: none;
+}
+.gsmtc-open{
+    display: block;
+}
+
+.gsmtc-admin-wrap{
+    box-sizing:border-box;
+    padding: 5px;
+    width: 100%;
+}
+.gsmtc-admin-wrap .gsmtc-admin-header{
+    background-color: rgb(87, 206, 87);
+    border: 1px #000 solid;
+    border-radius: 5px;
+    box-sizing:border-box;
+    margin-bottom: 5PX;
+    padding-left:10px;
+    width: 100%;
+}
+.gsmtc-admin-wrap .gsmtc-admin-form{
+    background-color: rgb(81, 163, 234);
+    border: 1px #000 solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+.gsmtc-admin-wrap .gsmtc-admin-form label{
+    margin-right: 5px;
+    font-size: medium;
+}
+
+.gsmtc-admin-wrap .gsmtc-admin-form input{
+    font-size: medium;
+}
+.gsmtc-admin-wrap .gsmtc-admin-form textarea{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+
+.gsmtc-admin-accordeon-wrap {
+    box-sizing:border-box;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.gsmtc-admin-accordeon-body {
+    box-sizing:border-box;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.gsmtc-admin-accordeon-wrap button{
+    background-color:rgb(125, 217, 233);
+    border-radius: 5px;
+    box-sizing:border-box;
+    font-size: medium;
+    height: 40px;;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.gsmtc-admin-acordeon-body .open{
+    background-color: aquamarine;
+
+}
+
+.gsmtc-admin-body-items{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gsmtc-admin-item {
+    background-color: burlywood;    
+    border: 1px #000 solid;
+    border-radius: 5px;
+    width: 250px;
+    margin:3px;
+    padding: 5px;
+    
+}
+.gsmtc-admin-item h4 {
+    text-align: center;
+}
+.gsmtc-admin-item-button{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    width:100%;
+}

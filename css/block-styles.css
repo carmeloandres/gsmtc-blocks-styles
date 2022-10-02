@@ -1,0 +1,24 @@
+
+/*
+* Estilos para el frontend
+*/
+
+blockquote.wp-block-quote.is-style-osom-quote {
+    padding: 30px;
+    border-left: solid 10px #FE77FE;
+    margin-left: 0px;
+    background: #f7f7f7;
+  }
+
+
+  /*
+  * Estilos para el editor
+  */
+  
+  .wp-block-quote.is-style-osom-quote {
+    padding: 30px;
+    border-left: solid 10px #FE77FE;
+    margin-left: 0px;
+    background: #f7f7f7;
+}
+
