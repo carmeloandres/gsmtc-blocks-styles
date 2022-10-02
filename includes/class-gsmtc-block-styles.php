@@ -116,14 +116,14 @@ class Gsmtc_Block_Styles{
 						),
 					),
 				);
-				$query = new WP_Query( $args );
+				//$query = new WP_Query( $args );
 				//$posts = $query->posts;
 				$posts = get_posts($args);
 				$result = array();
 				foreach( $posts as $post){
 					$data = array( 
 						'id' => $post->ID,
-						'label' => $post->title,
+						'label' => $post->post_title,
 						'cssClass' => $post->post_content
 					);
 					array_push($result,$data); 

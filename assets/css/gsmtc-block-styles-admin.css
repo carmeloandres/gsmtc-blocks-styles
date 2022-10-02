@@ -49,11 +49,11 @@
     width: 100%;
 }
 
-.gsmtc-admin-accordeon-body {
+/*.gsmtc-admin-accordeon-body {
     box-sizing:border-box;
     padding: 5px 0;
     width: 100%;
-}
+} */
 
 .gsmtc-admin-accordeon-wrap button{
     background-color:rgb(125, 217, 233);
