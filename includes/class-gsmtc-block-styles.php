@@ -62,8 +62,6 @@ class Gsmtc_Block_Styles{
 	function endpoints(){
 		register_rest_route('gsmtc','custom_block_styles',array(
 			'methods'  => 'POST',
-
-//			'methods'  => WP_REST_Server::READABLE,
 			'callback' => array($this,'custom_styles'),
 			'permission_callback' => array($this,'get_custom_styles_permissions_check'),			
 	
@@ -116,8 +114,6 @@ class Gsmtc_Block_Styles{
 						),
 					),
 				);
-				//$query = new WP_Query( $args );
-				//$posts = $query->posts;
 				$posts = get_posts($args);
 				$result = array();
 				foreach( $posts as $post){
@@ -168,7 +164,7 @@ class Gsmtc_Block_Styles{
 
 	}
 	/**
-	 * bild_new_assets
+	 * build_new_assets
 	 *
 	 * This method is used to build new assets files
 	 * 
@@ -182,18 +178,53 @@ class Gsmtc_Block_Styles{
 		);
         
 		$posts = get_posts($args);
-		error_log ('List o custom post type "gsmtc_block_style" : '.var_export($posts,true));
+//		error_log ('List o custom post type "gsmtc_block_style" : '.var_export($posts,true));
 
 		$this->build_css_file($posts);
 		$this->build_js_file($posts);
 	}
 
 	function build_css_file($posts){
+		$file = fopen(PLUGIN_DIR_PATH.'/assets/css/gsmtc-block-styles.css','w');
+		foreach( $posts as $post){
+			$content = $post->post_content;
+			$content ='.'.str_replace('core/','',$content);
+			$content_front = 'blockquote'.$content;
+			fwrite($file,$content_front.PHP_EOL);
+			fwrite($file,$content.PHP_EOL);
+		}
+		fclose($file);
+
 		error_log ('has been executed the function "build_css_files"');
 
 	}
 		
 	function build_js_file($posts){
+		$file = fopen(PLUGIN_DIR_PATH.'/assets/js/gsmtc-block-styles.js','w');
+		$header_content='const { __ } = wp.i18n;'.PHP_EOL.
+						'const { registerBlockStyle } = wp.blocks;'.PHP_EOL.PHP_EOL.
+		  				'	wp.domReady( () => {'.PHP_EOL;
+		$footer_content='} );';
+		fwrite($file,$header_content);				
+		foreach($posts as $post){
+			$block_name = get_post_meta($post->ID,'gsmtc_block_style',true);
+			$label = $post->post_title;
+			$name='gsmtc-'.$label;
+			$file_content = "		wp.blocks.registerBlockStyle( '".$block_name."',{".PHP_EOL.
+							"			name: '".$name."',".PHP_EOL.
+							"			label: '".$label."',".PHP_EOL.
+							"		});".PHP_EOL;
+			fwrite($file,$file_content);
+		}
+		/*
+		wp.blocks.registerBlockStyle( 'core/quote', {
+			name: 'osom-quote',
+			label: 'Dakota',
+		} ); */
+		
+		
+		fwrite($file,$footer_content);
+		fclose($file);
 		error_log ('has been executed the function "build_js_files"');
 
 	}

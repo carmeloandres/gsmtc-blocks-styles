@@ -57,59 +57,9 @@ class Gsmtc_Block_Styles_Admin{
                 "buttonUpdateLabel":"<?php echo __('Update class','gsmtc-block-styles') ?>",
             };
 
-            let wpApiSettings = {
-                "rest_url":"<?php echo rest_url( '/gsmtc/custom_block_styles' ); ?>",
-                "nonce":"<?php echo wp_create_nonce('wp_rest') ?>",
-                "block_name":"<?php echo $name ?>",
-                "statement":"<?php echo __('Edit the block style : ','gsmtc-block-styles') ?>",
-            };
         </script>
         <div id="gsmtc-block-styles"></div>
-        <div class="gsmtc-admin-wrap">
-            <div class="gsmtc-admin-header">
-                <h1 class="gsmtc-admin-title">Gesimatica block styles</h1>
-                <p class="gsmtc-admin-paragraph"><?php echo __('Edit the block style : ','gsmtc-block-styles').$name; ?></p>
-            </div><!-- gsmtc-admin-header -->
-            <div class="gsmtc-admin-body">
-            <form class="gsmtc-admin-form" action="" id="gsmtc_admin_form" method="post" enctype="multipart/form-data">
-                <h3>Introduce una nueva clase para el bloque</h3>
-                <label for="gsmtc_admin_input_etiqueta">Etiqueta de la clase</label>
-                <input type="text" name="gsmtc_admin_input_etiqueta" id="gsmtc_admin_input_etiqueta_nueva" value=""/>
-                <textarea name="textarea" id="gsmtc_admin_input_textarea_nueva" rows="10" style="width:100%" spellcheck="false"></textarea>
-                <input type="button" class="gsmtc-admin-actualizar" name="gsmtc_admin_actualizar" id="gsmtc_admin_actualizar" value="Añadir estilos" onclick="anyadirEstilos()" />
-                <input type="hidden" id="gsmtc_admin_post_id" name="gsmtc_post_id" value=0>           
-            </form>
-            <?php
-                if (count($posts) > 0){
-                    ?>
-                    <div class="gsmtc-admin-accordeon-wrap">
-                        <?php
-                            foreach($posts as $post){
-                                ?>
-                                
-                                <button id="gsmtc_block_style_button_<?php echo $post->ID ?>" onclick="showHideStyles(<?php echo $post->ID ?>)">Mostrar estilos : <span class="gsmtc-bold"><?php echo $post->post_title ?></span></button>
-                                <div class="gsmtc-admin-accordeon-body gsmtc-closed" id="gsmtc_admin_accordeon_body_id_<?php echo $post->ID ?>">
-                                <form class="gsmtc-admin-form" action="" id="gsmtc_admin_form" method="post" enctype="multipart/form-data">
-                <h3>Introduce una nueva clase para el bloque</h3>
-                <label for="gsmtc_admin_input_etiqueta">Etiqueta de la clase</label>
-                <input type="text" name="gsmtc_admin_input_etiqueta" id="gsmtc_admin_input_etiqueta_nueva" value=""/>
-                <textarea name="textarea" id="gsmtc_admin_input_textarea_nueva" rows="10" style="width:100%" spellcheck="false"></textarea>
-                <input type="button" class="gsmtc-admin-actualizar" name="gsmtc_admin_actualizar" id="gsmtc_admin_actualizar" value="Añadir estilos" onclick="anyadirEstilos()" />
-                <input type="hidden" id="gsmtc_admin_post_id" name="gsmtc_post_id" value=0>           
-            </form>
-
-        </div>
-        <?php
-                            }
-                            ?>
-                    </div><!-- gsmtc-admin-acordeon_body -->
-                    <?php
-                }
-                ?>
-            </div><!-- gsmtc-admin-body -->
-        </div><!-- gsmtc-admin-wrap -->
         <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.react.js' ?>"></script>
-        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/gsmtc-block-styles-admin.js' ?>"></script>
         <?php
     }
     
