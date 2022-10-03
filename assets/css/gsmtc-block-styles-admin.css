@@ -49,28 +49,28 @@
     width: 100%;
 }
 
-/*.gsmtc-admin-accordeon-body {
-    box-sizing:border-box;
-    padding: 5px 0;
-    width: 100%;
-} */
-
 .gsmtc-admin-accordeon-wrap button{
     background-color:rgb(125, 217, 233);
     border-radius: 5px;
     box-sizing:border-box;
     font-size: medium;
-    height: 40px;;
-    text-align: center;
+    height: 40px;
+    padding-left: 10px;
+    text-align: Left;
     width: 100%;
 }
 
-
-
-.gsmtc-admin-acordeon-body .open{
-    background-color: aquamarine;
-
+.gsmtc-admin-accordeon-wrap button:after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
 }
+.gsmtc-admin-accordeon-wrap .gsmtc-open:after{
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 
 .gsmtc-admin-body-items{
     display: flex;

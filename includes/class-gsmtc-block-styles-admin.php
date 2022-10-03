@@ -108,7 +108,7 @@ class Gsmtc_Block_Styles_Admin{
                 ?>
             </div><!-- gsmtc-admin-body -->
         </div><!-- gsmtc-admin-wrap -->
-        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.98bd6714.js' ?>"></script>
+        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.react.js' ?>"></script>
         <script src="<?php echo PLUGIN_DIR_URL.'assets/js/gsmtc-block-styles-admin.js' ?>"></script>
         <?php
     }
