@@ -3,28 +3,24 @@ const { registerBlockStyle } = wp.blocks;
 
 	wp.domReady( () => {
 		wp.blocks.registerBlockStyle( 'core/button',{
-			name: 'gsmtc-label3',
-			label: 'label3',
+			name: 'gsmtc-label1',
+			label: 'label1',
+		});
+		wp.blocks.registerBlockStyle( 'core/button',{
+			name: 'gsmtc-explorer2',
+			label: 'explorer2',
+		});
+		wp.blocks.registerBlockStyle( 'core/button',{
+			name: 'gsmtc-label2',
+			label: 'label2',
+		});
+		wp.blocks.registerBlockStyle( 'core/button',{
+			name: 'gsmtc-explorer',
+			label: 'explorer',
 		});
 		wp.blocks.registerBlockStyle( 'core/quote',{
 			name: 'gsmtc-explorer',
 			label: 'explorer',
-		});
-		wp.blocks.registerBlockStyle( 'core/button',{
-			name: 'gsmtc-label2',
-			label: 'label2',
-		});
-		wp.blocks.registerBlockStyle( 'core/button',{
-			name: 'gsmtc-label2',
-			label: 'label2',
-		});
-		wp.blocks.registerBlockStyle( 'core/button',{
-			name: 'gsmtc-hgjj',
-			label: 'hgjj',
-		});
-		wp.blocks.registerBlockStyle( 'core/button',{
-			name: 'gsmtc-label1',
-			label: 'label1',
 		});
 		wp.blocks.registerBlockStyle( 'core/buttons',{
 			name: 'gsmtc-label0',

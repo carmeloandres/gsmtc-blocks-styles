@@ -27,6 +27,7 @@
     border: 1px #000 solid;
     border-radius: 5px;
     padding: 5px;
+    transition: 0.4s;
 }
 .gsmtc-admin-wrap .gsmtc-admin-form label{
     margin-right: 5px;
@@ -94,4 +95,46 @@
     justify-content: center;
     align-content: flex-end;
     width:100%;
+}
+
+.gsmtc-notice-hide{
+    display:none;
+}
+
+.gsmtc-notice-warning{
+    color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+    box-sizing:border-box;
+    margin-top: 5px;
+    text-align:center;
+    padding: 5px; 
+    transition: 0.4s; 
+    display:block;
+}
+.gsmtc-notice-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+    box-sizing:border-box;
+    margin-top: 5px;
+    text-align:center;
+    padding: 5px; 
+    transition: 0.4s;   
+}
+.gsmtc-notice-error{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+    box-sizing:border-box;
+    margin-top: 5px;
+    text-align:center;
+    padding: 5px; 
+    transition: 0.4s; 
 }

@@ -91,12 +91,23 @@ class Gsmtc_Block_Styles{
 				case 'load':
 					$result = $this->request_load_custom_styles($params);
 					break;
+				case 'delete':
+					$result = $this->request_delete_custom_styles($params);
+					break;
 			}
 
 		} 
 		echo $result;
 		exit();
 		
+	}
+
+	function request_delete_custom_styles($params){
+		$result = false;
+		if (isset($params['idPost'])){
+			$result = wp_delete_post ($params['idPost'],true);
+		}
+		return json_encode($result);
 	}
 
 	function request_load_custom_styles($params){

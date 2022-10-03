@@ -1,20 +1,60 @@
-blockquote.wp-block-button.is-style-gsmtc-label3{
-    background-color: burlywood;    
-    border: 1px #000 solid;
-    border-radius: 5px;
-    width: 250px;
-    margin:3px;
-    padding: 5px;
-    change
+blockquote.wp-block-button.is-style-gsmtc-label1{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
 }
-.wp-block-button.is-style-gsmtc-label3{
-    background-color: burlywood;    
-    border: 1px #000 solid;
-    border-radius: 5px;
-    width: 250px;
-    margin:3px;
-    padding: 5px;
-    change
+.wp-block-button.is-style-gsmtc-label1{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+blockquote.wp-block-button.is-style-gsmtc-explorer2{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+.wp-block-button.is-style-gsmtc-explorer2{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+blockquote.wp-block-button.is-style-gsmtc-label2{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+.wp-block-button.is-style-gsmtc-label2{
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-size: medium;
+    width: 100%;
+}
+blockquote.wp-block-button.is-style-gsmtc-explorer{
+   color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+    text-align:center;
+    padding: 5px; 
+    transition: 0.4s; 
+    display:block;
+}
+.wp-block-button.is-style-gsmtc-explorer{
+   color: #664d03;
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    border: 1px solid transparent;
+    border-radius:0.25rem;
+    text-align:center;
+    padding: 5px; 
+    transition: 0.4s; 
+    display:block;
 }
 blockquote.wp-block-quote.is-style-gsmtc-explorer{
     padding: 30px;
@@ -27,52 +67,6 @@ blockquote.wp-block-quote.is-style-gsmtc-explorer{
     border-left: solid 10px #FE77FE;
     margin-left: 0px;
     background: #f7f7f7;
-}
-blockquote.wp-block-button.is-style-gsmtc-label2{
-    background-color: burlywood;    
-    border: 1px #000 solid;
-    border-radius: 5px;
-    width: 250px;
-    margin:3px;
-    padding: 5px;
-    Hola
-}
-.wp-block-button.is-style-gsmtc-label2{
-    background-color: burlywood;    
-    border: 1px #000 solid;
-    border-radius: 5px;
-    width: 250px;
-    margin:3px;
-    padding: 5px;
-    Hola
-}
-blockquote.wp-block-button.is-style-gsmtc-label2{
-    box-sizing:border-box;
-    padding: 5px;
-    width: 100%;
-hola
-}
-.wp-block-button.is-style-gsmtc-label2{
-    box-sizing:border-box;
-    padding: 5px;
-    width: 100%;
-hola
-}
-blockquote.wp-block-button.is-style-gsmtc-hgjj{
-
-}
-.wp-block-button.is-style-gsmtc-hgjj{
-
-}
-blockquote.wp-block-button.is-style-gsmtc-label1{
-    box-sizing:border-box;
-    padding: 5px;
-    width: 100%;
-}
-.wp-block-button.is-style-gsmtc-label1{
-    box-sizing:border-box;
-    padding: 5px;
-    width: 100%;
 }
 blockquote.wp-block-buttons.is-style-gsmtc-label0{
     box-sizing:border-box;

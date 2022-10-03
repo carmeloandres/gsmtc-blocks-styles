@@ -55,11 +55,15 @@ class Gsmtc_Block_Styles_Admin{
                 "formClassTitle":"<?php echo __('Edit the css class for the block','gsmtc-block-styles') ?>",
                 "inputClassLabel":"<?php echo __('Label for the class','gsmtc-block-styles') ?>",
                 "buttonUpdateLabel":"<?php echo __('Update class','gsmtc-block-styles') ?>",
+                "buttonDeleteLabel":"<?php echo __('Delete class','gsmtc-block-styles') ?>",
+                "noticeInProgress":"<?php echo __('Please wait','gsmtc-block-styles') ?>",
+                "noticeSuccess":"<?php echo __('Success action','gsmtc-block-styles') ?>",
+                "noticeError":"<?php echo __('Error','gsmtc-block-styles') ?>",               
             };
 
         </script>
         <div id="gsmtc-block-styles"></div>
-        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.react.js' ?>"></script>
+        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.f2d62c2a.js' ?>"></script>
         <?php
     }
     
