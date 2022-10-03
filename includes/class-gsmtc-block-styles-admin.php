@@ -49,7 +49,7 @@ class Gsmtc_Block_Styles_Admin{
                 "adminTitle":"<?php echo __('Gesimatica Block Styles','gsmtc-block-styles') ?>",
                 "statement":"<?php echo __('Edit the block style : ','gsmtc-block-styles') ?>",
                 "blockName":"<?php echo $name ?>",
-                "formNewClassTitle":"<?php echo __('Introduce a new css class for the block : ','gsmtc-block-styles') ?>",
+                "formNewClassTitle":"<?php echo __('Introduce a new css class for the block','gsmtc-block-styles') ?>",
                 "inputNewClassLabel":"<?php echo __('Set the label for the class : ','gsmtc-block-styles') ?>",
                 "buttonAddLabel":"<?php echo __('Add class','gsmtc-block-styles') ?>",
                 "formClassTitle":"<?php echo __('Edit the css class for the block','gsmtc-block-styles') ?>",
@@ -108,7 +108,7 @@ class Gsmtc_Block_Styles_Admin{
                 ?>
             </div><!-- gsmtc-admin-body -->
         </div><!-- gsmtc-admin-wrap -->
-        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.5fda6e96.js' ?>"></script>
+        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.98bd6714.js' ?>"></script>
         <script src="<?php echo PLUGIN_DIR_URL.'assets/js/gsmtc-block-styles-admin.js' ?>"></script>
         <?php
     }
