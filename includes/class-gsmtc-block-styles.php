@@ -23,12 +23,12 @@ class Gsmtc_Block_Styles{
     }
 
 	function editor_block_styles_enqueue(){
-		$full_path_file = PLUGIN_DIR_PATH.'assets/build/gsmtc-block-styles.js';
+		$full_path_file = PLUGIN_DIR_PATH.'assets/js/gsmtc-block-styles.js';
 		error_log('path of javascript : '.var_export($full_path_file,true));
 		if (file_exists($full_path_file)){
 			wp_enqueue_script(
 				'gsmtc-block-styles',
-				PLUGIN_DIR_URL. 'assets/build/gsmtc-block-styles.js',
+				PLUGIN_DIR_URL. 'assets/js/gsmtc-block-styles.js',
 				array( 'wp-blocks', 'wp-dom-ready' ),
 				'1',
 				true
@@ -200,8 +200,8 @@ class Gsmtc_Block_Styles{
 		foreach( $posts as $post){
 			$content = $post->post_content;
 			$content ='.'.str_replace('core/','',$content);
-			$content_front = 'blockquote'.$content;
-			fwrite($file,$content_front.PHP_EOL);
+//			$content_front = 'blockquote'.$content;
+//			fwrite($file,$content_front.PHP_EOL);
 			fwrite($file,$content.PHP_EOL);
 		}
 		fclose($file);

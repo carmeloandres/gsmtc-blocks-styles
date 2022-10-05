@@ -40,13 +40,21 @@ $gsmtcBlockStyles = new Gsmtc_Block_Styles();
  * Creamos la función para cargar el javascript que añadira variaciones de estilos a los diferentes bloques
  */
 function osom_block_styles_enqueue() {
-	wp_enqueue_script(
+/*	wp_enqueue_script(
 		'gsmtc-block-styles',
 		plugin_dir_url( __FILE__ ). 'js/block-styles.js',
 		array( 'wp-blocks', 'wp-dom-ready' ),
 		'1',
 		true
+	);  */
+	wp_enqueue_script(
+		'gsmtc-block-styles',
+		plugin_dir_url( __FILE__ ). 'assets/js/gsmtc-block-styles.js',
+		array( 'wp-blocks', 'wp-dom-ready' ),
+		'1',
+		true
 	);  
+
 }
 add_action( 'enqueue_block_editor_assets', 'osom_block_styles_enqueue' );
 
@@ -55,7 +63,8 @@ add_action( 'enqueue_block_editor_assets', 'osom_block_styles_enqueue' );
  */
 function gsmtc_enqueue_block_assets(){
 
-    wp_enqueue_style( 'gsmtc-block-styles', plugin_dir_url( __FILE__ ). 'css/block-styles.css', array(), '1' );
+//    wp_enqueue_style( 'gsmtc-block-styles', plugin_dir_url( __FILE__ ). 'css/block-styles.css', array(), '1' ); // pruebas
+    wp_enqueue_style( 'gsmtc-block-styles', plugin_dir_url( __FILE__ ). 'assets/css/gsmtc-block-styles.css', array(), '1' ); 
 
 } 
 add_action( 'enqueue_block_assets', 'gsmtc_enqueue_block_assets' );

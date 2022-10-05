@@ -63,7 +63,7 @@ class Gsmtc_Block_Styles_Admin{
 
         </script>
         <div id="gsmtc-block-styles"></div>
-        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.f2d62c2a.js' ?>"></script>
+        <script src="<?php echo PLUGIN_DIR_URL.'assets/js/index.113d6a3f.js' ?>"></script>
         <?php
     }
     
